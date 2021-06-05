@@ -11,6 +11,6 @@
   },
   "scripts": {
     "dev": "nodemon --watch index.js",
-    "start": "pm2 start index.js"
+    "start": "pm2 start index.js && pm2 save"
   }
 }
