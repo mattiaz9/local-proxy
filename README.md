@@ -1,19 +1,14 @@
 # Setup
 
-1 - Install p2m
-`npm i -g pm2`
+Setup a local proxy.
 
-and after:
-`pm2 startup`
-
-2 - Intall dependencies
+1 - Intall dependencies
 `yarn`
 
-3 - Start deamon
-`yarn start`
+2 - Install p2m
+`npm i -g pm2`
 
-4 - Setup startup script
-`pm2 startup`
+3 - Run process
+`pm2 start index.js --name localproxy`
 
-then:
-`sudo env PATH=$PATH:/usr/local/bin /usr/local/lib/node_modules/pm2/bin/pm2 startup launchd -u yourusername --hp /Users/yourusername`
+Now you can navigate to `https://localhost:3333/http://yourcustomurl.com`
